@@ -2,7 +2,6 @@ package com.yx.interceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -12,6 +11,7 @@ public class LoginInterceptor implements HandlerInterceptor  {
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
         System.out.println("执行后，返回前执行....");
+//        Replace this use of System.out or System.err by a logger.
     }
 
     @Override
